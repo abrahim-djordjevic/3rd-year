@@ -11,8 +11,6 @@ from sklearn.cluster import KMeans
 import numpy as np
 import pandas as pd
 import numpy as np
-import visualisation
-import clustering
 import plotly
 import plotly.graph_objs as go
 import ipywidgets as widgets
@@ -26,7 +24,7 @@ def interactivePlots(fig, axes):
         plotly.offline.iplot_mpl(fig, show_link=False, strip_style=True) # offline ipython notebook
 
 #data
-GuoDataAll = pd.read_csv('C://Documents//GuoData.csv', index_col=[0])
+GuoDataAll = pd.read_csv('C://Users//User//Documents//GuoData.csv', index_col=[0])
 labelsAll = GuoDataAll.index # The labels give the cell-type for each cell
 
 #Take the data subsdet containing only 64 cell stage labels
